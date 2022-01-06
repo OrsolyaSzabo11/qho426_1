@@ -33,11 +33,24 @@ class Robot:
   def display(self):
       print(f"I am {self.name}")
 
+  def grow{self}:
+      self.age +=1
+  
+  def eat(self, amount):
+      self.energy += amount
+      if self.energy > Robot.MAX_ENERGY:
+          self.energy = Robot.MAX_ENERGY
+
+  def move(self, distance):
+      self.energy -+ distance
+      if self.energy , <0:
+          self.energy = 0
+
 if __name__ == "__main__":
   human = Robot()
   human.display()
-
-
-
-print(human)
-print(repr(human))
+  print(human)
+  print(repr(human))
+  human.move(83)
+  human.eat(59)
+  print(human)
